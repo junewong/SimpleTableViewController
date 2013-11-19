@@ -23,6 +23,8 @@
 		BD38EA25181026F000D2E68C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD38EA00181026EF00D2E68C /* Foundation.framework */; };
 		BD38EA2D181026F000D2E68C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BD38EA2B181026F000D2E68C /* InfoPlist.strings */; };
 		BD38EA30181026F000D2E68C /* SimpleTableViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD38EA2F181026F000D2E68C /* SimpleTableViewControllerTests.m */; };
+		BD38EA3C181027FE00D2E68C /* SimpleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD38EA3B181027FE00D2E68C /* SimpleTableViewController.m */; };
+		BD38EA4518102B0400D2E68C /* XibViewLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = BD38EA4418102B0400D2E68C /* XibViewLoader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,10 @@
 		BD38EA2C181026F000D2E68C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BD38EA2E181026F000D2E68C /* SimpleTableViewControllerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewControllerTests.h; sourceTree = "<group>"; };
 		BD38EA2F181026F000D2E68C /* SimpleTableViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewControllerTests.m; sourceTree = "<group>"; };
+		BD38EA3A181027FE00D2E68C /* SimpleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableViewController.h; sourceTree = "<group>"; };
+		BD38EA3B181027FE00D2E68C /* SimpleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableViewController.m; sourceTree = "<group>"; };
+		BD38EA4318102B0400D2E68C /* XibViewLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XibViewLoader.h; sourceTree = "<group>"; };
+		BD38EA4418102B0400D2E68C /* XibViewLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XibViewLoader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,8 @@
 		BD38EA04181026EF00D2E68C /* SimpleTableViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BD38EA3D1810284600D2E68C /* demo */,
+				BD38EA39181027FE00D2E68C /* SimpleTableViewController */,
 				BD38EA0D181026F000D2E68C /* AppDelegate.h */,
 				BD38EA0E181026F000D2E68C /* AppDelegate.m */,
 				BD38EA16181026F000D2E68C /* ViewController.h */,
@@ -158,6 +166,32 @@
 				BD38EA2B181026F000D2E68C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BD38EA39181027FE00D2E68C /* SimpleTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BD38EA4218102B0400D2E68C /* XibViewLoader */,
+				BD38EA3A181027FE00D2E68C /* SimpleTableViewController.h */,
+				BD38EA3B181027FE00D2E68C /* SimpleTableViewController.m */,
+			);
+			path = SimpleTableViewController;
+			sourceTree = "<group>";
+		};
+		BD38EA3D1810284600D2E68C /* demo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = demo;
+			sourceTree = "<group>";
+		};
+		BD38EA4218102B0400D2E68C /* XibViewLoader */ = {
+			isa = PBXGroup;
+			children = (
+				BD38EA4318102B0400D2E68C /* XibViewLoader.h */,
+				BD38EA4418102B0400D2E68C /* XibViewLoader.m */,
+			);
+			path = XibViewLoader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +306,8 @@
 				BD38EA0B181026F000D2E68C /* main.m in Sources */,
 				BD38EA0F181026F000D2E68C /* AppDelegate.m in Sources */,
 				BD38EA18181026F000D2E68C /* ViewController.m in Sources */,
+				BD38EA3C181027FE00D2E68C /* SimpleTableViewController.m in Sources */,
+				BD38EA4518102B0400D2E68C /* XibViewLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +419,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleTableViewController/SimpleTableViewController-Prefix.pch";
 				INFOPLIST_FILE = "SimpleTableViewController/SimpleTableViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -394,6 +431,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleTableViewController/SimpleTableViewController-Prefix.pch";
 				INFOPLIST_FILE = "SimpleTableViewController/SimpleTableViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
